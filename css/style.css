@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&family=MedievalSharp&family=Metamorphous&display=swap');
+*{
+    font-family: 'Metamorphous', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/*common*/
+
+#ring{
+    width: 30px;
+    transform: rotate(-38.5deg);
+}  
+
+body{
+    background-image:url(../img/fondohtml.jpg) ;
+    height: 100vh;
+    width: 100%;
+    background-position:center;
+    z-index: 1;
+}
+
+
+/*nav-bar*/
+
+.container-fluid{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+/*h1*/
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/*index*/
+
+.grid-container-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    gap: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.grid-item1-index{
+    font-size: smaller;
+    
+}
+
+.map{
+    height: 100vh;
+    width: 100%;
+}
+
+span{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.grid-item2-index{
+    font-size: smaller;
+}
+
+.p1{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    transform: translate(0,-40px);
+    opacity: calc(75%);
+}
+
+
+/*footer*/
+
+footer{
+    margin-top: 150px;
+}
+
+.group-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.group-icons>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-icons{
+    width: 30px;
+    height: auto;
+}
+
+.copyright-author{
+    text-align: center;
+}
+/*end footer*/
+
+
+
+/*author html #2*/ 
+.h2-author{
+    margin-bottom: 3em;
+}
+
+.h3-author{
+    font-size:x-small;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+/*Grid#1 del html About the Author
+que posee 2 columnas y 2 filas */
+.grid-container-authors1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-item1-authors1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1.25px;
+    line-height: 32px;
+    padding-right: 30px;
+}
+
+.img-tolkien-author-dates{
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+.grid-item2-authors1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    letter-spacing: 1.25px;
+    line-height: 32px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.img-tolkien-author{
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+
+/*Grid#2 del html About the Author
+que posee 2 filas, la superior en 1 columna unificada y la inferior dividida en 3 columnas */
+
+.grid-container-authors2{
+    display:grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item1-authors2{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.grid-item2-authors2{
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    text-align: center;
+    display: flex;
+}
+
+.books-image{
+    width: 300px;
+    height: 380px;
+}
+
+
+/*responsive*/
