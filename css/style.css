@@ -7,10 +7,16 @@
 
 /*common*/
 
-#ring{
+#ring{ 
     width: 30px;
     transform: rotate(-38.5deg);
-}  
+    padding-right: 10px;
+}
+
+#ring:hover{
+    width: 60px;
+    transition: width 1.5s;
+}        
 
 body{
     background-image:url(../img/fondohtml.jpg) ;
@@ -21,8 +27,8 @@ body{
 }
 
 .container-all{
-    margin-left:50px ;
-    margin-right:50px ;
+    padding-left:50px ;
+    padding-right:50px ;
     min-width: 100vw;
 }
 
@@ -35,13 +41,18 @@ body{
     font-size: large;
 }
 
+.nav-item:hover{
+    font-size: larger;
+    transition: font-size 1.5s;
+}
+
 a{
     text-decoration: none;
 }
 
 ul{
     list-style-type: none;
-    font-size: larger;
+    font-size: small;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
@@ -102,7 +113,7 @@ span{
 /*footer*/
 
 footer{
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .group-icons{
@@ -203,17 +214,20 @@ que posee 2 filas, la superior en 1 columna unificada y la inferior dividida en 
 }
 
 
-/*responsive*/
+/*Responsive*/
 /*responsive de index*/
-/* @media (min-width: 0px) and (max-width: 500px) {
+/* A modo de aclaración de porqué no fue necesario implementar breakpoints sobre este html, debo decir que: la distribución de los elementos empleados permite que estos se reubiquen sin problemas en 1 única columna tanto a mayores como menores resoluciones.
+Por lo tanto para evitar el uso de código innecesario no se emplearon breakpoints en este html.*/
+/* @media (min-width: 500px) */
 
-} */
+/* @media (min-width: 768px) */
 
+/* @media (min-width: 1024px) */
 
 
 /*responsive de about the author*/
 /* break de 0-500px Authors */
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 500px) {
 .grid-container-authors1{
         display: grid;
         grid-template-columns: 1fr;
@@ -236,7 +250,7 @@ que posee 2 filas, la superior en 1 columna unificada y la inferior dividida en 
 }
 
 /* break de 500-768px Authors */
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 768px) {
     .grid-container-authors1{
         display: grid;
         grid-template-columns: 1fr;
@@ -252,7 +266,10 @@ que posee 2 filas, la superior en 1 columna unificada y la inferior dividida en 
 }
 
 /* @media (min-width: 768px) and (max-width: 1024px)
-Breakpoint innecesario*/
+Breakpoint innecesario ya que no se rompe*/
+/* @media (min-width: 1024px) {
+}
+} */
 
 
 
