@@ -70,11 +70,12 @@ h1{
 
 .grid-item1-index{
     font-size: smaller;
+    padding-bottom: 100px;
     
 }
 
 .map{
-    height: 100vh;
+    height:auto;
     width: 100%;
 }
 
@@ -86,6 +87,7 @@ span{
 
 .grid-item2-index{
     font-size: smaller;
+    padding-top: 50px;
 }
 
 .p1{
@@ -202,6 +204,14 @@ que posee 2 filas, la superior en 1 columna unificada y la inferior dividida en 
 
 
 /*responsive*/
+/*responsive de index*/
+/* @media (min-width: 0px) and (max-width: 500px) {
+
+} */
+
+
+
+/*responsive de about the author*/
 /* break de 0-500px Authors */
 @media (min-width: 0px) and (max-width: 500px) {
 .grid-container-authors1{
